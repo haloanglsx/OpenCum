@@ -1,4 +1,5 @@
 #include "TechnologyManager.h"
+#include "Technology.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -45,6 +46,8 @@ void TechnologyManager::addTechnology(const std::string& name, const std::string
         std::cout << "Enter language: ";
         std::getline(std::cin, language);
         technologies.push_back(new BackendTechnology(name, language));
+    } else {
+        std::cout << "Invalid type. Technology not added." << std::endl;
     }
 }
 
