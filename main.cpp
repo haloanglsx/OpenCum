@@ -25,6 +25,12 @@ int main() {
                 manager.addTechnology(name, type);
                 break;
             }
+            case 2:
+                manager.dispayALL();
+                break;
+            case 3: {
+                int index
+            }
         }
         {
         case /* constant-expression */:
