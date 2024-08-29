@@ -1,5 +1,5 @@
 #include <istream>
-#include "TechnologyManager.h"
+#include <TechnologyManager.h>
 
 int main() {
     TechnologyManager manager;
@@ -29,16 +29,29 @@ int main() {
                 manager.dispayALL();
                 break;
             case 3: {
-                int index
+                int index;
+                sdt::cout << "Enter index technology to edit :";
+                std::cin >> index;
+                std::cin.ignore();
+                manager.editTechnology(index);
+                break;
             }
+            case 4: {
+                int index;
+                std::cout << "Enter index technology delete :";
+                std::cin >> index;
+                std::cin.ignore();
+                manager.deleteTechnology(index);
+                break;
+            }
+            case 5:
+                std::cout << "Exiting...";
+                break;
+            default:
+                std::cout << "Invalid choice. please try again..\n";
+                break;
         }
-        {
-        case /* constant-expression */:
-            /* code */
-            break;
-        
-        default:
-            break;
-        }
-    }
+    }while (choice !=5);
+return 0
+
 }
