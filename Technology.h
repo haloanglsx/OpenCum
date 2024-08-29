@@ -10,7 +10,8 @@ protected:
 public:
     Technology(const std::string& name, const std::string& type);
     virtual ~Technology() = default;
-    virtual void dispay() const;
+
+    virtual void dispay() const; //1
     virtual std::string serialize() const = 0;
 };
 
@@ -20,7 +21,9 @@ private:
 
 public:
     FrontentTechnology(const std::string& name, const std::string& framework);
-    void display() const override;
+
+    void display() const override;  //2
+    
     std::string serialize() const override;
 };
 
@@ -30,7 +33,7 @@ private:
 
 public:
     BackendTechnology(const std::string& name, const std::string& language);
-    voif dispay() const override;
+    void dispay() const override;
     std::string serialize() const override;
 };
 
