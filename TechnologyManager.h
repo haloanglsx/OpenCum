@@ -1,4 +1,4 @@
-#ifndef TECHNOLOGYMANAGER_H
+git #ifndef TECHNOLOGYMANAGER_H
 #define TECHNOLOGYMANAGER_H
 
 #include "Technology.h"
