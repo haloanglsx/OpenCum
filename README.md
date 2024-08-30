@@ -1,3 +1,5 @@
+[Cat](https://raw.githubusercontent.com/haloanglsx/project_cpp/15abd41be9ccf5cfc913d27a6fab0f1a9e5efbd9/InShot_20240830_171222426.png)
+
 ### 1. **Клас Technology та його успадкування**
    - **Базовий клас (`Technology`)**:
      - Це абстрактний базовий клас, який представляє загальну технологію з такими атрибутами, як `name` (назва) та `type` (тип).
